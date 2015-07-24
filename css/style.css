@@ -1,0 +1,17 @@
+#photo {
+  width: 270px;
+  height: 170px;
+  border: solid 1px black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.thumbnails {
+  padding-left: 1px;
+  list-style-type: none;  
+}
+
+.thumbnail {
+  margin-right: 5px;
+}
