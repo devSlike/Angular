@@ -2,7 +2,11 @@ angular
 	.module('app')
 	.controller('photosController', photosController);
 
+photosController.$inject = [
+	'$scope',
+	'photosFactory'
+];
+
 function photosController($scope, photosFactory) {
-	$scope.photos = photosFactory();
-	//	    $scope.photos = HttpPhotos.query({ index: 1 });
+	$scope.photos = photosFactory.getPhotosByResource();
 }

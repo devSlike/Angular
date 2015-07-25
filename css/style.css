@@ -1,17 +1,35 @@
 #photo {
-  width: 270px;
-  height: 170px;
+  width: 600px;
+  height: 600px;
   border: solid 1px black;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  z-index: 10;
+  position: absolute;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.9);
+  left: 50%;
+  margin-left :-25%;
+  display: none;
 }
 
-.thumbnails {
+#thumbnails {
   padding-left: 1px;
-  list-style-type: none;  
+  list-style-type: none;
+  left: 50%;
+  margin-left :-25%;
+  margin: auto;
+  display: block;
+  width: 300px;
+  text-align: center;
 }
 
 .thumbnail {
   margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+  width: 300px;
 }
